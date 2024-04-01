@@ -1,0 +1,7 @@
+//file:noinspection GrUnresolvedAccess
+//file:noinspection GroovyAssignabilityCheck
+
+repositories {
+    mavenLocal()
+    mavenCentral()
+}
