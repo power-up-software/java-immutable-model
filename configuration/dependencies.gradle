@@ -1,13 +1,13 @@
 //file:noinspection GrUnresolvedAccess
 ext.buildDependencies = [
-        checkstyleVersion                           : '10.12.1',
-        h3xstreamFindsecbugsFindsecbugsPluginVersion: '1.12.0', //group: 'com.h3xstream.findsecbugs', name: 'findsecbugs-plugin'
+        checkstyleVersion                           : '10.14.2',
+        h3xstreamFindsecbugsFindsecbugsPluginVersion: '1.13.0', //group: 'com.h3xstream.findsecbugs', name: 'findsecbugs-plugin'
 ]
 
 ext.dependencyVersions = [
-        apacheCommonsCommonsCollections4Version: '4.4', //group: 'org.apache.commons', name: 'commons-collections4'
+        apacheCommonsCommonsCollections4Version: '4.5.0-M1', //group: 'org.apache.commons', name: 'commons-collections4'
         apacheCommonsCommonsLang3Version       : '3.14.0', //group: 'org.apache.commons', name: 'commons-lang3'
-        slf4jSlf4jApiVersion                   : '2.1.0-alpha1', //group: 'org.slf4j', name: 'slf4j-api'
+        slf4jSlf4jApiVersion                   : '2.0.12', //group: 'org.slf4j', name: 'slf4j-api'
 ]
 
 ext.testLibDependencies = [
