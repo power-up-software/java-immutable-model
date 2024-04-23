@@ -8,7 +8,7 @@ buildscript {
 }
 
 plugins {
-    id 'com.github.spotbugs' version '6.0.9'
+    id 'com.github.spotbugs' version '6.0.12'
     id 'pl.allegro.tech.build.axion-release' version '1.17.0'
     id 'com.github.ben-manes.versions' version '0.51.0'
     id 'nu.studer.credentials' version '3.0'
