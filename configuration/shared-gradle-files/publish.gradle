@@ -8,6 +8,7 @@ publishing {
                 artifact source: makeZip, extension: "zip"
             }
             artifact sourceJar
+            artifact javadocJar
             if (project.tasks.findByName('testJar')) {
                 artifact testJar
             }

@@ -16,7 +16,7 @@ plugins {
 
 ext {
     configurationPath = "configuration"
-    mavenGroupId = 'com.powerup.java-immutable-model'
+    mavenGroupId = 'com.powerupsoftwareengineering.java-immutable-model'
     Object gradlePluginUrlProperty = project.findProperty('gradlePluginRepositoryUrl')
     if (gradlePluginUrlProperty != null) {
         gradlePluginRepositoryUrl = gradlePluginUrlProperty
@@ -44,7 +44,7 @@ ext {
     }
 }
 
-group 'com.powerup.java-immutable-model'
+group 'com.powerupsoftwareengineering.java-immutable-model'
 
 allprojects {
     apply plugin: 'maven-publish'

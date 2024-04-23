@@ -79,4 +79,11 @@ repositories {
         archiveClassifier.set("sources")
         from sourceSets.main.allJava
     }
+
+    tasks.register('javadocJar', Jar) {
+        dependsOn javadoc
+        archiveBaseName.set("${moduleName}")
+        archiveClassifier.set("javadoc")
+        from javadoc.destinationDir
+    }
 }

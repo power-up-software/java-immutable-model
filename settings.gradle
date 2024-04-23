@@ -1,5 +1,5 @@
 //file:noinspection GrUnresolvedAccess
-rootProject.name = 'com.powerup.java-immutable-model'
+rootProject.name = 'com.powerupsoftwareengineering.java-immutable-model'
 
 include 'model'
 include 'sample'
