@@ -18,17 +18,18 @@ configurations.configureEach {
 dependencies {
     implementation group: 'org.slf4j', name: 'slf4j-api', version: dependencyVersions.slf4jSlf4jApiVersion
     spotbugsPlugins group: 'com.h3xstream.findsecbugs', name: "findsecbugs-plugin", version: buildDependencies.h3xstreamFindsecbugsFindsecbugsPluginVersion
+    testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
 }
 
 compileJava {
-    sourceCompatibility = JavaVersion.VERSION_17
-    targetCompatibility = JavaVersion.VERSION_17
+    sourceCompatibility = JavaVersion.VERSION_21
+    targetCompatibility = JavaVersion.VERSION_21
     options.fork = true
 }
 
 compileTestJava {
-    sourceCompatibility = JavaVersion.VERSION_17
-    targetCompatibility = JavaVersion.VERSION_17
+    sourceCompatibility = JavaVersion.VERSION_21
+    targetCompatibility = JavaVersion.VERSION_21
     options.fork = true
 }
 
@@ -37,7 +38,7 @@ jar {
         attributes(
                 'Build-Timestamp': new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss.SSSZ").format(new Date()),
                 'Created-By': "Gradle ${gradle.gradleVersion}",
-                'Build-Jdk-Spec': JavaVersion.VERSION_17,
+                'Build-Jdk-Spec': JavaVersion.VERSION_21,
                 'Implementation-Title': moduleName,
                 'Implementation-Version': project.version
         )
@@ -46,6 +47,7 @@ jar {
 
 javadoc {
     options.tags = ["noinspection"]
+    options.addStringOption('Xdoclint:none', '-quiet')
     excludes = ["**/Jaxb*", "**/ObjectFactory.java"] as Iterable<String>
 }
 

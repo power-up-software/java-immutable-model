@@ -3,8 +3,8 @@ package com.powerup.java.immutable.model.builder.validator;
 import java.util.function.Supplier;
 
 /**
- * A <code>MandatoryDoubleValidator</code> is a validator that validates if a mandatory double is set. In this context set mean not null and not
- * equal to 0.0.
+ * A <code>MandatoryDoubleValidator</code> is a validator that validates if a mandatory double is set.
+ * In this context set means not null and not equal to 0.0.
  *
  * @author Chris Picard
  */

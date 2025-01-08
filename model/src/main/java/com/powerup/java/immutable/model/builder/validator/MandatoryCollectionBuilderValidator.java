@@ -5,8 +5,8 @@ import java.util.function.Supplier;
 import org.apache.commons.collections4.CollectionUtils;
 
 /**
- * A <code>MandatoryCollectionValidator</code> is a validator that validates if a mandatory collection is set. In this context a set collection is a
- * collection that has at least one value.
+ * A <code>MandatoryCollectionValidator</code> is a validator that validates if a mandatory collection is set.
+ * In this context, a set collection is a collection that has at least one value.
  *
  * @author Chris Picard
  */

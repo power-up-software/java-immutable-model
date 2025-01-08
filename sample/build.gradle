@@ -1,10 +1,11 @@
 //file:noinspection GroovyAssignabilityCheck
 //file:noinspection GrUnresolvedAccess
+//file:noinspection DependencyNotationArgument
 ext {
     moduleName = 'java-immutable-model-sample'
 }
 
-apply from: "${rootDir}/${configurationPath}/shared-gradle-files/model.gradle"
+apply from: "${rootDir}/${configurationPath}/shared-gradle-files/sample.gradle"
 
 
 dependencies {

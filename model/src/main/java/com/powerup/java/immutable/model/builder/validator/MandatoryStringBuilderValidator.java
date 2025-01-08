@@ -4,8 +4,8 @@ import java.util.function.Supplier;
 import org.apache.commons.lang3.StringUtils;
 
 /**
- * A <code>MandatoryStringValidator</code> is a validator that validates if a mandatory string is set. In this context a set string is one that is not
- * null and is not empty.
+ * A <code>MandatoryStringValidator</code> is a validator that validates if a mandatory string is set.
+ * In this context, a set string is one that is not null and is not empty.
  *
  * @author Chris Picard
  */

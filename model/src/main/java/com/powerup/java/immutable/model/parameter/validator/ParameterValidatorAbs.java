@@ -25,6 +25,11 @@ public abstract class ParameterValidatorAbs<T> implements ParameterValidator<T> 
         this.name = name;
     }
 
+    /**
+     * Utility method to validate of the parameter validator builder is correctly formed.
+     *
+     * @throws IllegalArgumentException The parameter validator builder is not formed correctly.
+     */
     protected void validateBuilder() throws IllegalArgumentException {
         if (StringUtils.isEmpty(name)) {
             throw new IllegalArgumentException("Name must be set.");

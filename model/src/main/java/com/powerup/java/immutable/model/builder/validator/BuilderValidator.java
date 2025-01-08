@@ -12,17 +12,18 @@ public interface BuilderValidator {
      */
     String UNSET_ERROR_MESSAGE_FORMAT = "%s must be set";
     /**
-     * Format used to generate an "is set" error message. Is set errors occur when a value is set when it should not be unset.
+     * Format used to generate an "is set" error message.
+     * "Is set" errors occur when a value is set when it should not be unset.
      */
     String IS_SET_ERROR_MESSAGE_FORMAT = "%s must not be set";
     /**
-     * Format used to generate a greater than equal to error message. Greater than equal to errors occur what a value is not greater than or equal to
-     * a provided value.
+     * Format used to generate a "greater than equal to" error message.
+     * Greater than equal to errors occur what a value is not greater than or equal to a provided value.
      */
     String GREATER_THAN_EQUAL_TO_ERROR_MESSAGE_FORMAT = "%s must be greater than equal to %s";
     /**
-     * Format used to generate a less than equal to error message. Less than equal to errors occur what a value is not less than or equal to a
-     * provided value.
+     * Format used to generate a "less than equal to" error message.
+     * Less than equal to errors occur what a value is not less than or equal to a provided value.
      */
     String LESS_THAN_EQUAL_TO_ERROR_MESSAGE_FORMAT = "%s must be less than equal to %s";
 

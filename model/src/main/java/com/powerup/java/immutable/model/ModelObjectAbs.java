@@ -9,7 +9,7 @@ import org.apache.commons.lang3.builder.ToStringBuilder;
 import org.apache.commons.lang3.builder.ToStringStyle;
 
 /**
- * <code>ModelObjectAbs</code> is designed to serve as the parent class for {@link ModelObject}s. It contains all the common logic needed by model all
+ * <code>ModelObjectAbs</code> is designed to serve as the parent class for {@link ModelObject}s. It contains all the common logic needed by all
  * model objects.
  *
  * @author Chris Picard
@@ -27,7 +27,7 @@ public abstract class ModelObjectAbs implements ModelObject {
 
     /**
      * Base constructor that will populate the <code>ModelObjectAbs</code> with the values from the provided builder.
-     * This method is protected to ensure that the class is immutable and always valid, but allow for child classes to extend it.
+     * This method is protected to ensure that the class is immutable and always valid, but is allowed for child classes to extend it.
      *
      * @param builder Fully populated builder that has been validated.
      */
@@ -77,6 +77,12 @@ public abstract class ModelObjectAbs implements ModelObject {
          * Builder value for {@link ModelObjectAbs#id}.
          */
         private UUID id;
+
+        /**
+         * Default constructor.
+         */
+        public Builder() {
+        }
 
         @Override
         public void copyValues(final T modelObject) {

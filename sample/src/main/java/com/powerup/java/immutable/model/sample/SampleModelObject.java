@@ -10,9 +10,10 @@ import org.apache.commons.lang3.builder.ToStringBuilder;
 import org.apache.commons.lang3.builder.ToStringStyle;
 
 /**
- * A <code>SampleModelObject</code> is a sample model object designed to show how to use the Immutable model object functionality. It features use of
- * both build and parameter validators. For parameter validators it uses the soft length filter. See {@link SampleChildModelObject} for an example of
- * the hard length filter.
+ * A <code>SampleModelObject</code> is a sample model object designed to show how to use the Immutable model object functionality.
+ * It features use of both build and parameter validators.
+ * For parameter validators, it uses the soft length filter.
+ * See {@link SampleChildModelObject} for an example of the hard length filter.
  *
  * <p>This object is immutable. To modify use the object's builder class. You can use the @{link Builder#copyValues} method
  * to initialize the builder to the original values.

@@ -3,14 +3,15 @@ package com.powerup.java.immutable.model.builder.validator;
 import java.util.function.Supplier;
 
 /**
- * A <code>MandatoryIntValidator</code> is a validator that validates if a mandatory int is set. In this context set mean not null and not equal to 0.
+ * A <code>MandatoryIntValidator</code> is a validator that validates if a mandatory int is set.
+ * In this context set means not null and not equal to 0.
  *
  * @author Chris Picard
  */
 @SuppressWarnings("JavadocReference")
 public final class MandatoryIntBuilderValidator extends BuilderValidatorAbs {
     /**
-     * The supplier of the int parameter to validate that it is set.
+     * Supplier of the int parameter to validate that it is set.
      */
     private final Supplier<Integer> valueSupplier;
 

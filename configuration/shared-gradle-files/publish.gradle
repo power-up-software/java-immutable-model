@@ -12,8 +12,8 @@ publishing {
             if (project.tasks.findByName('testJar')) {
                 artifact testJar
             }
-            groupId "${mavenGroupId}"
-            artifactId "${moduleName}"
+            groupId = "${mavenGroupId}"
+            artifactId = "${moduleName}"
             version = project.version
             from components.java
         }

@@ -3,8 +3,8 @@ package com.powerup.java.immutable.model.builder.validator;
 import java.util.function.Supplier;
 
 /**
- * A <code>MandatoryFloatValidator</code> is a validator that validates if a mandatory float is set. In this context set mean not null and not
- * equal to 0.0.
+ * A <code>MandatoryFloatValidator</code> is a validator that validates if a mandatory float is set.
+ * In this context set means not null and not equal to 0.0.
  *
  * @author Chris Picard
  */

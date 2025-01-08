@@ -39,6 +39,11 @@ public abstract class BuilderValidatorAbs implements BuilderValidator, Serializa
         return name;
     }
 
+    /**
+     * Utility method to validate of the validator builder is correctly formed.
+     *
+     * @throws IllegalArgumentException The validator builder is not formed correctly.
+     */
     protected void validateBuilder() throws IllegalArgumentException {
         if (StringUtils.isEmpty(name)) {
             throw new IllegalArgumentException("Name must be set.");

@@ -3,15 +3,15 @@ package com.powerup.java.immutable.model.builder.validator;
 import java.util.function.Supplier;
 
 /**
- * A <code>MandatoryObjectValidator</code> is a validator that validates if a mandatory object is set. If there is a more specific validator for an
- * object such as a collection or string, those validators should be used instead.
+ * A <code>MandatoryObjectValidator</code> is a validator that validates if a mandatory object is set.
+ * If there is a more specific validator for an object such as a collection or string, those validators should be used instead.
  *
  * @author Chris Picard
  */
 @SuppressWarnings("JavadocReference")
 public final class MandatoryObjectBuilderValidator extends BuilderValidatorAbs {
     /**
-     * The supplier of the object parameter to validate that it is set.
+     * Supplier of the object parameter to validate that it is set.
      */
     private final Supplier<Object> valueSupplier;
 
