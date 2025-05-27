@@ -10,6 +10,6 @@ apply from: "${rootDir}/${configurationPath}/shared-gradle-files/sample.gradle"
 
 dependencies {
     implementation project(':model')
-    implementation group: 'org.apache.commons', name: 'commons-collections4', version: dependencyVersions.apacheCommonsCommonsCollections4Version
+
     implementation group: 'org.apache.commons', name: 'commons-lang3', version: dependencyVersions.apacheCommonsCommonsLang3Version
 }

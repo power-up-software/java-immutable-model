@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.github.bjornvester.xjc</groupId>
+  <artifactId>com.github.bjornvester.xjc.gradle.plugin</artifactId>
+  <version>1.7.0</version>
+  <packaging>pom</packaging>
+  <name>Gradle XJC plugin</name>
+  <description>A plugin that generates Java source code for XML schemas (xsd files) using the XJC tool.
+    Please see the GitHub project page for details.
+  </description>
+  <dependencies>
+    <dependency>
+      <groupId>com.github.bjornvester</groupId>
+      <artifactId>xjc-gradle-plugin</artifactId>
+      <version>1.7.0</version>
+    </dependency>
+  </dependencies>
+</project>

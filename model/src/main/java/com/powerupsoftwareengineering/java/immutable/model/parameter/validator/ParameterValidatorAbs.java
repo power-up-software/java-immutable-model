@@ -17,7 +17,7 @@
 
 package com.powerupsoftwareengineering.java.immutable.model.parameter.validator;
 
-import org.apache.commons.lang3.StringUtils;
+import com.powerup.value.verification.util.StringVerificationUtil;
 
 /**
  * A <code>ParameterValidatorAbs</code> is the common implementation used by all parameter validators that holds the name of the parameter being
@@ -48,7 +48,7 @@ public abstract class ParameterValidatorAbs<T> implements ParameterValidator<T> 
      * @throws IllegalArgumentException The parameter validator builder is not formed correctly.
      */
     protected void validateBuilder() throws IllegalArgumentException {
-        if (StringUtils.isEmpty(name)) {
+        if (StringVerificationUtil.isEmpty(name)) {
             throw new IllegalArgumentException("Name must be set.");
         }
     }

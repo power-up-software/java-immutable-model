@@ -17,9 +17,9 @@
 
 package com.powerupsoftwareengineering.java.immutable.model.builder.validator;
 
+import com.powerup.value.verification.util.StringVerificationUtil;
 import java.io.Serial;
 import java.io.Serializable;
-import org.apache.commons.lang3.StringUtils;
 
 /**
  * A <code>BuilderValidatorAbs</code> is the common implementation used by all builder validators that holds the name of the parameter being
@@ -62,7 +62,7 @@ public abstract class BuilderValidatorAbs implements BuilderValidator, Serializa
      * @throws IllegalArgumentException The validator builder is not formed correctly.
      */
     protected void validateBuilder() throws IllegalArgumentException {
-        if (StringUtils.isEmpty(name)) {
+        if (StringVerificationUtil.isEmpty(name)) {
             throw new IllegalArgumentException("Name must be set.");
         }
     }

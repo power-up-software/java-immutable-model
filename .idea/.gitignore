@@ -15,4 +15,5 @@ misc.xml
 uiDesigner.xml
 aws.xml
 dictionaries/*.xml
+dictionaries/*.dic
 modules.xml

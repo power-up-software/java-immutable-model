@@ -17,9 +17,9 @@
 
 package com.powerupsoftwareengineering.java.immutable.model.builder.validator;
 
+import com.powerup.value.verification.util.CollectionVerificationUtil;
 import java.util.Collection;
 import java.util.function.Supplier;
-import org.apache.commons.collections4.CollectionUtils;
 
 /**
  * A <code>MandatoryCollectionValidator</code> is a validator that validates if a mandatory collection is set.
@@ -52,7 +52,7 @@ public final class MandatoryCollectionBuilderValidator extends BuilderValidatorA
     @Override
     public String validate() {
         String result = "";
-        if (CollectionUtils.isEmpty(valueSupplier.get())) {
+        if (CollectionVerificationUtil.isEmpty(valueSupplier.get())) {
             result = String.format(UNSET_ERROR_MESSAGE_FORMAT, getName());
         }
         return result;

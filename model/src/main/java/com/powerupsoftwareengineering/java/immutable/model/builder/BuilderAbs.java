@@ -12,16 +12,16 @@
  * GNU General Public License for more details.
  *
  * You should have received a copy of the GNU General Public License
- * along with this program. If not, see <https://www.gnu.org/licenses/>.
+ * along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
 
 package com.powerupsoftwareengineering.java.immutable.model.builder;
 
+import com.powerup.value.verification.util.CollectionVerificationUtil;
+import com.powerup.value.verification.util.StringVerificationUtil;
 import com.powerupsoftwareengineering.java.immutable.model.builder.validator.BuilderValidator;
 import java.util.ArrayList;
 import java.util.List;
-import org.apache.commons.collections4.CollectionUtils;
-import org.apache.commons.lang3.StringUtils;
 
 /**
  * A <code>BuilderAbs</code> represents the common components of the Builder Pattern implementation used for generating immutable model objects. It
@@ -98,8 +98,8 @@ public abstract class BuilderAbs<T> {
      */
     public void validate() throws IllegalStateException {
         List<String> errorMessages = performValidation();
-        if (CollectionUtils.isNotEmpty(errorMessages)) {
-            throw new IllegalStateException(StringUtils.join(errorMessages, ERROR_MESSAGE_DELIMITER));
+        if (CollectionVerificationUtil.isNotEmpty(errorMessages)) {
+            throw new IllegalStateException(String.join(ERROR_MESSAGE_DELIMITER, errorMessages));
         }
     }
 
@@ -109,7 +109,7 @@ public abstract class BuilderAbs<T> {
      * @return True if the content is valid, false if it is not.
      */
     public boolean isValid() {
-        return CollectionUtils.isEmpty(performValidation());
+        return CollectionVerificationUtil.isEmpty(performValidation());
     }
 
     /**
@@ -118,7 +118,7 @@ public abstract class BuilderAbs<T> {
      * @return String of all the current validation errors present in the builder.
      */
     public String getValidationErrors() {
-        return StringUtils.join(performValidation(), ERROR_MESSAGE_DELIMITER);
+        return String.join(ERROR_MESSAGE_DELIMITER, performValidation());
     }
 
     /**
@@ -130,7 +130,7 @@ public abstract class BuilderAbs<T> {
         List<String> errorMessages = new ArrayList<>();
         for (BuilderValidator builderValidator : builderValidators) {
             String validationResult = builderValidator.validate();
-            if (StringUtils.isNotEmpty(validationResult)) {
+            if (StringVerificationUtil.isNotEmpty(validationResult)) {
                 errorMessages.add(validationResult);
             }
         }

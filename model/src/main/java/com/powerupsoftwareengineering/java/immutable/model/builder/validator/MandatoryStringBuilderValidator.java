@@ -17,8 +17,8 @@
 
 package com.powerupsoftwareengineering.java.immutable.model.builder.validator;
 
+import com.powerup.value.verification.util.StringVerificationUtil;
 import java.util.function.Supplier;
-import org.apache.commons.lang3.StringUtils;
 
 /**
  * A <code>MandatoryStringValidator</code> is a validator that validates if a mandatory string is set.
@@ -51,7 +51,7 @@ public final class MandatoryStringBuilderValidator extends BuilderValidatorAbs {
     @Override
     public String validate() {
         String result = "";
-        if (StringUtils.isEmpty(valueSupplier.get())) {
+        if (StringVerificationUtil.isEmpty(valueSupplier.get())) {
             result = String.format(UNSET_ERROR_MESSAGE_FORMAT, getName());
         }
         return result;
