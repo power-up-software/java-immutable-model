@@ -14,3 +14,5 @@ jarRepositories.xml
 misc.xml
 uiDesigner.xml
 aws.xml
+dictionaries/*.xml
+modules.xml
