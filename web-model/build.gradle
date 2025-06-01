@@ -12,13 +12,16 @@ apply from: "${rootDir}/${configurationPath}/shared-gradle-files/web-model.gradl
 
 dependencies {
     implementation project(":model")
-    implementation group: 'com.powerupsoftwareengineering.value-verification-library', name: 'value-verification-library-util', version: dependencyVersions.powerupsoftwareengineeringValueVerificationLibraryJValueVerificationLibraryUtilVersion
-    implementation group: 'org.apache.commons', name: 'commons-lang3', version: dependencyVersions.apacheCommonsCommonsLang3Version
+
     implementation group: 'com.google.guava', name: 'guava', version: dependencyVersions.googleGuavaGuavaVersion
+    implementation group: 'com.powerupsoftwareengineering.value-verification-library', name: 'value-verification-library-util', version: dependencyVersions.powerupsoftwareengineeringValueVerificationLibraryValueVerificationLibraryUtilVersion
     implementation group: 'jakarta.xml.bind', name: 'jakarta.xml.bind-api', version: dependencyVersions.jakartaXmlBindJakartaXmlBindApiVersion
-    testImplementation group: 'org.simplify4u', name: 'slf4j2-mock', version: testLibDependencies.simplify4uSlf4j2MockVersion
+    implementation group: 'org.apache.commons', name: 'commons-lang3', version: dependencyVersions.apacheCommonsCommonsLang3Version
+
     testImplementation project(path: ':model', configuration: 'testArtifacts')
+
     testImplementation group: 'com.github.spotbugs', name: "spotbugs", version: testLibDependencies.githubSpotbugsSpotbugsVersion
+    testImplementation group: 'org.simplify4u', name: 'slf4j2-mock', version: testLibDependencies.simplify4uSlf4j2MockVersion
 }
 
 xjc {
