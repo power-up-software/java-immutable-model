@@ -44,7 +44,7 @@ ext {
     }
 }
 
-group 'com.powerupsoftwareengineering.java-immutable-model'
+group = 'com.powerupsoftwareengineering.java-immutable-model'
 
 allprojects {
     apply plugin: 'maven-publish'
