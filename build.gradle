@@ -8,7 +8,7 @@ buildscript {
 }
 
 plugins {
-    id 'com.github.spotbugs' version '6.1.11'
+    id 'com.github.spotbugs' version '6.1.13'
     id 'pl.allegro.tech.build.axion-release' version '1.18.18'
     id 'com.github.ben-manes.versions' version '0.52.0'
     id 'nu.studer.credentials' version '3.0'
@@ -44,7 +44,7 @@ ext {
     }
 }
 
-group 'com.powerupsoftwareengineering.java-immutable-model'
+group = 'com.powerupsoftwareengineering.java-immutable-model'
 
 allprojects {
     apply plugin: 'maven-publish'
