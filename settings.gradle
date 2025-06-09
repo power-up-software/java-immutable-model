@@ -10,7 +10,7 @@ pluginManagement {
 }
 rootProject.name = 'com.powerupsoftwareengineering.java-immutable-model'
 
-include 'model'
+include 'database'
 include 'sample'
 include 'web-model'
-include 'database'
+include 'model'
