@@ -5,7 +5,7 @@ ext.buildDependencies = [
 ]
 
 ext.dependencyVersions = [
-        apacheCommonsCommonsLang3Version                                                     : '3.17.0', //group: 'org.apache.commons', name: 'commons-lang3'
+        apacheCommonsCommonsLang3Version                                                     : '3.18.0', //group: 'org.apache.commons', name: 'commons-lang3'
         googleGuavaGuavaVersion                                                              : '33.4.8-jre', //group: 'com.google.guava', name: 'guava'
         jakartaXmlBindJakartaXmlBindApiVersion                                               : '4.0.2', //group: 'jakarta.xml.bind', name: 'jakarta.xml.bind-api'
         javaxXmlBindJaxbApiVersion                                                           : '2.4.0-b180830.0359', //group: 'javax.xml.bind', name: 'jaxb-api'
