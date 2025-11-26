@@ -13,8 +13,9 @@ apply from: "${rootDir}/${configurationPath}/shared-gradle-files/web-model.gradl
 dependencies {
     implementation project(":model")
 
+    implementation 'com.powerupsoftwareengineering.value-verification-library:value-verification-library-util:' + localDependencyVersions.valueVerificationLibraryVersion
+
     implementation 'com.google.guava:guava:' + dependencyVersions.googleGuavaGuavaVersion
-    implementation 'com.powerupsoftwareengineering.value-verification-library:value-verification-library-util:' + dependencyVersions.powerupsoftwareengineeringValueVerificationLibraryValueVerificationLibraryUtilVersion
     implementation 'jakarta.xml.bind:jakarta.xml.bind-api:' + dependencyVersions.jakartaXmlBindJakartaXmlBindApiVersion
     implementation 'org.apache.commons:commons-lang3:' + dependencyVersions.apacheCommonsCommonsLang3Version
 
