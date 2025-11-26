@@ -9,8 +9,8 @@ apply from: "${rootDir}/${configurationPath}/shared-gradle-files/database.gradle
 dependencies {
     implementation project(":model")
 
-    implementation group: 'com.google.guava', name: 'guava', version: dependencyVersions.googleGuavaGuavaVersion
-    implementation group: 'org.apache.commons', name: 'commons-lang3', version: dependencyVersions.apacheCommonsCommonsLang3Version
+    implementation 'com.google.guava:guava:' + dependencyVersions.googleGuavaGuavaVersion
+    implementation 'org.apache.commons:commons-lang3:' + dependencyVersions.apacheCommonsCommonsLang3Version
 
-    testImplementation group: 'com.github.spotbugs', name: "spotbugs", version: testLibDependencies.githubSpotbugsSpotbugsVersion
+    testImplementation 'com.github.spotbugs:spotbugs:' + testLibDependencies.githubSpotbugsSpotbugsVersion
 }
