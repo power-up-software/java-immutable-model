@@ -11,5 +11,5 @@ apply from: "${rootDir}/${configurationPath}/shared-gradle-files/sample.gradle"
 dependencies {
     implementation project(':model')
 
-    implementation group: 'org.apache.commons', name: 'commons-lang3', version: dependencyVersions.apacheCommonsCommonsLang3Version
+    implementation 'org.apache.commons:commons-lang3:' + dependencyVersions.apacheCommonsCommonsLang3Version
 }

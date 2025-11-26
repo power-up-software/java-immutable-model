@@ -7,6 +7,6 @@ ext {
 apply from: "${rootDir}/${configurationPath}/shared-gradle-files/model.gradle"
 
 dependencies {
-    implementation group: 'com.powerupsoftwareengineering.value-verification-library', name: 'value-verification-library-util', version: dependencyVersions.powerupsoftwareengineeringValueVerificationLibraryValueVerificationLibraryUtilVersion
-    implementation group: 'org.apache.commons', name: 'commons-lang3', version: dependencyVersions.apacheCommonsCommonsLang3Version
+    implementation 'com.powerupsoftwareengineering.value-verification-library:value-verification-library-util:' + dependencyVersions.powerupsoftwareengineeringValueVerificationLibraryValueVerificationLibraryUtilVersion
+    implementation 'org.apache.commons:commons-lang3:' + dependencyVersions.apacheCommonsCommonsLang3Version
 }

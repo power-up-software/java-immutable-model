@@ -10,7 +10,7 @@ configurations {
 }
 
 dependencies {
-    api group: 'javax.xml.bind', name: 'jaxb-api', version: dependencyVersions.javaxXmlBindJaxbApiVersion
+    api 'javax.xml.bind:jaxb-api:' + dependencyVersions.javaxXmlBindJaxbApiVersion
 }
 
 clean {
