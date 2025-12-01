@@ -17,7 +17,7 @@
 
 package com.powerupsoftwareengineering.java.immutable.model.parameter.validator;
 
-import com.powerup.value.verification.util.StringVerificationUtil;
+import com.powerupsoftwareengineering.value.verification.util.StringVerificationUtil;
 
 /**
  * A <code>ParameterValidatorAbs</code> is the common implementation used by all parameter validators that holds the name of the parameter being

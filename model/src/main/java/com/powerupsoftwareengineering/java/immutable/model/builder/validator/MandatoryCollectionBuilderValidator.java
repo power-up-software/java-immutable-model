@@ -17,7 +17,7 @@
 
 package com.powerupsoftwareengineering.java.immutable.model.builder.validator;
 
-import com.powerup.value.verification.util.CollectionVerificationUtil;
+import com.powerupsoftwareengineering.value.verification.util.CollectionVerificationUtil;
 import java.util.Collection;
 import java.util.function.Supplier;
 

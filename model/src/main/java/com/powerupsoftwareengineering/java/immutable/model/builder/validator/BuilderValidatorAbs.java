@@ -17,7 +17,7 @@
 
 package com.powerupsoftwareengineering.java.immutable.model.builder.validator;
 
-import com.powerup.value.verification.util.StringVerificationUtil;
+import com.powerupsoftwareengineering.value.verification.util.StringVerificationUtil;
 import java.io.Serial;
 import java.io.Serializable;
 
