@@ -17,7 +17,7 @@
 
 package com.powerupsoftwareengineering.java.immutable.web.model.translator;
 
-import com.powerup.value.verification.util.StringVerificationUtil;
+import com.powerupsoftwareengineering.value.verification.util.StringVerificationUtil;
 import java.time.Duration;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
