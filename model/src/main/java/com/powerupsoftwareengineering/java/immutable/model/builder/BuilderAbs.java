@@ -1,5 +1,5 @@
 /*
- * Copyright (c) Power Up Software Engineering LLC 2025.
+ * Copyright (c) Power Up Software Engineering LLC 2026.
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -12,7 +12,7 @@
  * GNU General Public License for more details.
  *
  * You should have received a copy of the GNU General Public License
- * along with this program.  If not, see <https://www.gnu.org/licenses/>.
+ * along with this program. If not, see <https://www.gnu.org/licenses/>.
  */
 
 package com.powerupsoftwareengineering.java.immutable.model.builder;
