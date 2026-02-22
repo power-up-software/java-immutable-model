@@ -52,7 +52,7 @@ public final class MandatoryListBuilderValidator extends BuilderValidatorAbs {
     @Override
     public String validate() {
         String result = "";
-        if (CollectionVerificationUtil.isNotEmpty(valueSupplier.get())) {
+        if (CollectionVerificationUtil.isEmpty(valueSupplier.get())) {
             result = String.format(UNSET_ERROR_MESSAGE_FORMAT, getName());
         }
         return result;

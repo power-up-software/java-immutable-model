@@ -52,7 +52,7 @@ public final class MandatoryMapBuilderValidator extends BuilderValidatorAbs {
     @Override
     public String validate() {
         String result = "";
-        if (MapVerificationUtil.isNotEmpty(valueSupplier.get())) {
+        if (MapVerificationUtil.isEmpty(valueSupplier.get())) {
             result = String.format(UNSET_ERROR_MESSAGE_FORMAT, getName());
         }
         return result;
