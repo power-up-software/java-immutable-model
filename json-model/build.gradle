@@ -1,0 +1,14 @@
+//file:noinspection GroovyAssignabilityCheck
+//file:noinspection GrUnresolvedAccess
+ext {
+    moduleName = 'java-immutable-model-json-model'
+}
+
+apply from: "${rootDir}/${configurationPath}/shared-gradle-files/standard-module.gradle"
+
+dependencies {
+    implementation 'com.google.guava:guava:' + dependencyVersions.googleGuavaGuavaVersion
+    implementation 'com.powerupsoftwareengineering.java-immutable-model:java-immutable-model:' + dependencyVersions.powerupsoftwareengineeringJavaImmutableModelJavaImmutableModelVersion
+    implementation 'com.powerupsoftwareengineering.value-verification-library:value-verification-library-util:' + dependencyVersions.powerupsoftwareengineeringValueVerificationLibraryValueVerificationLibraryUtilVersion
+    implementation 'org.apache.commons:commons-lang3:' + dependencyVersions.apacheCommonsCommonsLang3Version
+}
