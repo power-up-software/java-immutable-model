@@ -4,13 +4,13 @@ ext {
     moduleName = 'java-immutable-model-database'
 }
 
-apply from: "${rootDir}/${configurationPath}/shared-gradle-files/database.gradle"
+apply from: "${rootDir}/${rootProject.configurationPath}/shared-gradle-files/database.gradle"
 
 dependencies {
     implementation project(":model")
 
-    implementation 'com.google.guava:guava:' + dependencyVersions.googleGuavaGuavaVersion
-    implementation 'org.apache.commons:commons-lang3:' + dependencyVersions.apacheCommonsCommonsLang3Version
+    implementation 'com.google.guava:guava:' + rootProject.dependencyVersions.googleGuavaGuavaVersion
+    implementation 'org.apache.commons:commons-lang3:' + rootProject.dependencyVersions.apacheCommonsCommonsLang3Version
 
-    testImplementation 'com.github.spotbugs:spotbugs:' + testLibDependencies.githubSpotbugsSpotbugsVersion
+    testImplementation 'com.github.spotbugs:spotbugs:' + rootProject.testLibDependencies.githubSpotbugsSpotbugsVersion
 }

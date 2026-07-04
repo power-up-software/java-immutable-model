@@ -4,9 +4,9 @@ ext {
     moduleName = 'java-immutable-model'
 }
 
-apply from: "${rootDir}/${configurationPath}/shared-gradle-files/model.gradle"
+apply from: "${rootDir}/${rootProject.configurationPath}/shared-gradle-files/standard-module.gradle"
 
 dependencies {
-    implementation 'com.powerupsoftwareengineering.value-verification-library:value-verification-library-util:' + dependencyVersions.powerupsoftwareengineeringValueVerificationLibraryValueVerificationLibraryUtilVersion
-    implementation 'org.apache.commons:commons-lang3:' + dependencyVersions.apacheCommonsCommonsLang3Version
+    implementation 'com.powerupsoftwareengineering.value-verification-library:value-verification-library-util:' + rootProject.dependencyVersions.powerupsoftwareengineeringValueVerificationLibraryValueVerificationLibraryUtilVersion
+    implementation 'org.apache.commons:commons-lang3:' + rootProject.dependencyVersions.apacheCommonsCommonsLang3Version
 }

@@ -4,10 +4,10 @@ ext {
     moduleName = 'java-immutable-model-json-model'
 }
 
-apply from: "${rootDir}/${configurationPath}/shared-gradle-files/standard-module.gradle"
+apply from: "${rootDir}/${rootProject.configurationPath}/shared-gradle-files/standard-module.gradle"
 
 dependencies {
     implementation project(":model")
 
-    implementation 'org.apache.commons:commons-lang3:' + dependencyVersions.apacheCommonsCommonsLang3Version
+    implementation 'org.apache.commons:commons-lang3:' + rootProject.dependencyVersions.apacheCommonsCommonsLang3Version
 }
