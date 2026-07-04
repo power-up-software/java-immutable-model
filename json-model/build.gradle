@@ -1,7 +1,7 @@
 //file:noinspection GroovyAssignabilityCheck
 //file:noinspection GrUnresolvedAccess
 ext {
-    moduleName = 'java-immutable-model-json-model'
+    moduleName = 'java-immutable-json-model'
 }
 
 apply from: "${rootDir}/${rootProject.configurationPath}/shared-gradle-files/standard-module.gradle"

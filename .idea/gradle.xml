@@ -15,7 +15,6 @@
             <option value="$PROJECT_DIR$/json-model" />
             <option value="$PROJECT_DIR$/model" />
             <option value="$PROJECT_DIR$/sample" />
-            <option value="$PROJECT_DIR$/web-model" />
           </set>
         </option>
       </GradleProjectSettings>
