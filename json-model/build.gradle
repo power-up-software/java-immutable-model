@@ -7,6 +7,8 @@ ext {
 apply from: "${rootDir}/${configurationPath}/shared-gradle-files/standard-module.gradle"
 
 dependencies {
+    implementation project(":model")
+
     implementation 'com.google.guava:guava:' + dependencyVersions.googleGuavaGuavaVersion
     implementation 'com.powerupsoftwareengineering.java-immutable-model:java-immutable-model:' + dependencyVersions.powerupsoftwareengineeringJavaImmutableModelJavaImmutableModelVersion
     implementation 'com.powerupsoftwareengineering.value-verification-library:value-verification-library-util:' + dependencyVersions.powerupsoftwareengineeringValueVerificationLibraryValueVerificationLibraryUtilVersion
