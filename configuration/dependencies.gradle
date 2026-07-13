@@ -6,7 +6,7 @@ ext.buildDependencies = [
 
 ext.dependencyVersions = [
         apacheCommonsCommonsLang3Version                                                     : '3.20.0', //group: 'org.apache.commons', name: 'commons-lang3'
-        githubSpotbugsSpotbugsVersion                                                        : '4.10.2', //group: 'com.github.spotbugs', name: 'spotbugs'
+        githubSpotbugsSpotbugsVersion                                                        : '4.10.3', //group: 'com.github.spotbugs', name: 'spotbugs'
         googleGuavaGuavaVersion                                                              : '33.6.0-jre', //group: 'com.google.guava', name: 'guava'
         mybatisMybatisSpringVersion                                                          : '4.1.0', //group: 'org.mybatis', name: 'mybatis-spring'
         mybatisMybatisVersion                                                                : '3.5.19', //group: 'org.mybatis', name: 'mybatis'
@@ -18,10 +18,10 @@ ext.dependencyVersions = [
 ]
 
 ext.testLibDependencies = [
-        githubSpotbugsSpotbugsVersion                   : '4.10.2', //group: 'com.github.spotbugs', name: 'spotbugs'
-        junitJupiterJunitJupiterApiVersion              : '6.1.1', //group: 'org.junit.jupiter', name: 'junit-jupiter-api'
-        junitJupiterJunitJupiterEngineVersion           : '6.1.1', //group: 'org.junit.jupiter', name: 'junit-jupiter-engine'
-        junitJupiterJunitJupiterParamsVersion           : '6.1.1', //group: 'org.junit.jupiter', name: 'junit-jupiter-params'
+        githubSpotbugsSpotbugsVersion                   : '4.10.3', //group: 'com.github.spotbugs', name: 'spotbugs'
+        junitJupiterJunitJupiterApiVersion              : '6.1.2', //group: 'org.junit.jupiter', name: 'junit-jupiter-api'
+        junitJupiterJunitJupiterEngineVersion           : '6.1.2', //group: 'org.junit.jupiter', name: 'junit-jupiter-engine'
+        junitJupiterJunitJupiterParamsVersion           : '6.1.2', //group: 'org.junit.jupiter', name: 'junit-jupiter-params'
         mockitoMockitoCoreVersion                       : '5.23.0', //group: 'org.mockito', name: 'mockito-core'
         mockitoMockitoJunitJupiterVersion               : '5.23.0', //group: 'org.mockito', name: 'mockito-junit-jupiter'
         springframeworkSecuritySpringSecurityCoreVersion: '7.1.0-M3', //group: 'org.springframework.security', name: 'spring-security-core'
