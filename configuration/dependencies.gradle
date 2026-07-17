@@ -10,7 +10,7 @@ ext.dependencyVersions = [
         googleGuavaGuavaVersion                                                              : '33.6.0-jre', //group: 'com.google.guava', name: 'guava'
         mybatisMybatisSpringVersion                                                          : '4.1.0', //group: 'org.mybatis', name: 'mybatis-spring'
         mybatisMybatisVersion                                                                : '3.5.19', //group: 'org.mybatis', name: 'mybatis'
-        mybatisSpringBootMybatisSpringBootStarterVersion                                     : '4.0.1', //group: 'org.mybatis.spring.boot', name: 'mybatis-spring-boot-starter'
+        mybatisSpringBootMybatisSpringBootStarterVersion                                     : '4.1.0', //group: 'org.mybatis.spring.boot', name: 'mybatis-spring-boot-starter'
         powerupsoftwareengineeringValueVerificationLibraryValueVerificationLibraryUtilVersion: '2.0.39', //group: 'com.powerupsoftwareengineering.value-verification-library', name: 'value-verification-library-util'
         slf4jSlf4jApiVersion                                                                 : '2.0.18', //group: 'org.slf4j', name: 'slf4j-api'
         springframeworkBootSpringBootStarterJdbcVersion                                      : '4.1.0-M4', //group: 'org.springframework.boot', name: 'spring-boot-starter-jdbc'
