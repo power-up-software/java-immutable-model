@@ -26,7 +26,6 @@ import java.util.UUID;
  *
  * @author Chris Picard
  */
-@SuppressWarnings("unused")
 public interface ModelObject extends Serializable {
 
     /**

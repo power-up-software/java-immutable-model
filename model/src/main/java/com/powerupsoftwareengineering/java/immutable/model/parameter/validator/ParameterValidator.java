@@ -25,7 +25,6 @@ package com.powerupsoftwareengineering.java.immutable.model.parameter.validator;
  *
  * @author Chris Picard
  */
-@SuppressWarnings("unused")
 public interface ParameterValidator<T> {
     /**
      * Error message representing that a length restriction on a value is exceeded.

@@ -17,7 +17,6 @@
 
 package com.powerupsoftwareengineering.java.immutable.model.parameter.validator;
 
-@SuppressWarnings("unused")
 public class FakeParameterValidator extends ParameterValidatorAbs<String> {
 
     public FakeParameterValidator(final String name) {

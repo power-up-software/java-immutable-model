@@ -17,7 +17,6 @@
 
 package com.powerupsoftwareengineering.java.immutable.model.builder;
 
-@SuppressWarnings("unused")
 class FakeBuilder extends BuilderAbs<String> {
 
     @Override

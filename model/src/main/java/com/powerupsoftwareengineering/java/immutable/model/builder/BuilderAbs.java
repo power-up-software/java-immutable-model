@@ -32,10 +32,9 @@ import java.util.List;
  *
  * @author Chris Picard
  */
-@SuppressWarnings({"SameParameterValue", "unused"})
 public abstract class BuilderAbs<T> {
     /**
-     * The delimiter used to seperated different error messages when they are combined.
+     * The delimiter used to separated different error messages when they are combined.
      */
     public static final String ERROR_MESSAGE_DELIMITER = ", ";
     /**
