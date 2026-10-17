@@ -9,7 +9,6 @@ apply from: "${rootDir}/${rootProject.configurationPath}/shared-gradle-files/dat
 dependencies {
     implementation project(":model")
 
-    implementation 'com.google.guava:guava:' + rootProject.dependencyVersions.googleGuavaGuavaVersion
     implementation 'org.apache.commons:commons-lang3:' + rootProject.dependencyVersions.apacheCommonsCommonsLang3Version
 
     testImplementation 'com.github.spotbugs:spotbugs:' + rootProject.testLibDependencies.githubSpotbugsSpotbugsVersion
