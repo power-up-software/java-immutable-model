@@ -7,7 +7,7 @@ ext.buildDependencies = [
 ext.dependencyVersions = [
         apacheCommonsCommonsLang3Version                                                     : '3.21.0', //group: 'org.apache.commons', name: 'commons-lang3'
         mybatisMybatisSpringVersion                                                          : '4.1.0', //group: 'org.mybatis', name: 'mybatis-spring'
-        mybatisMybatisVersion                                                                : '3.5.19', //group: 'org.mybatis', name: 'mybatis'
+        mybatisMybatisVersion                                                                : '3.6.0', //group: 'org.mybatis', name: 'mybatis'
         powerupsoftwareengineeringValueVerificationLibraryValueVerificationLibraryUtilVersion: '2.0.84', //group: 'com.powerupsoftwareengineering.value-verification-library', name: 'value-verification-library-util'
         slf4jSlf4jApiVersion                                                                 : '2.0.20', //group: 'org.slf4j', name: 'slf4j-api'
 ]
